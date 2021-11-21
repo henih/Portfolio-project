@@ -21,8 +21,11 @@ h6 {
 
 footer h4 {
   font-size: 36px;
+  text-align: left;
 }
-
+footer p {
+  text-align: left;
+}
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
@@ -72,8 +75,7 @@ p {
   line-height: 2;
 }
 .hero a,
-.content-container a,
-.contact-box a {
+.content-container a {
   background: var(--branding-color);
   color: white;
   border-radius: 4px;
@@ -185,6 +187,7 @@ footer .email-link {
   color: black;
   font-size: 24px;
   text-align: center;
+  background: none;
 }
 
 footer .email-link:hover {
@@ -204,4 +207,16 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+
+footer .btn-branding {
+  background: var(--branding-color);
+  color: white;
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+.ml-5 {
+  margin-left: 20px !important;
 }
