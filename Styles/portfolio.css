@@ -75,7 +75,7 @@ p {
   line-height: 2;
 }
 .hero a,
-.content-container a {
+.content-container .btn-branding {
   background: var(--branding-color);
   color: white;
   border-radius: 4px;
