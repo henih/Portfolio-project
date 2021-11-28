@@ -36,7 +36,7 @@ p {
 .project-description h2 {
   font-size: 62px;
 }
-.project-description a {
+.project-description .btn-branding-outline {
   border-radius: 4px;
   padding: 15px 30px;
   font-size: 18px;
@@ -74,7 +74,7 @@ p {
   font-size: 24px;
   line-height: 2;
 }
-.hero a,
+.hero .btn-branding,
 .content-container .btn-branding {
   background: var(--branding-color);
   color: white;
@@ -141,7 +141,7 @@ p {
   footer h3 {
     font-size: 25px;
   }
-  footer .btn {
+  footer .btn-branding {
     font-size: 12px;
   }
 
