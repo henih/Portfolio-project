@@ -65,13 +65,14 @@ section .btn-branding-outline, .about-me .btn-branding-outline {
   font-size: 19px;
   transition: all 200ms ease-in-out;
   border: 1px solid var(--branding-color);
-  color: snow;
+  color: snow ;
   background: var(--branding-color);
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-section .btn-branding-outline:hover, 
+section .btn-branding-outline:hover, .about-me .btn-branding-outline:hover
 {
-  color: var(--branding-color);
+  color: var(--branding-color) !important;
   background: white;
   border: 1px solid var(--branding-color);
 }
@@ -103,12 +104,14 @@ section .btn-branding-outline:hover,
   padding: 15px 30px;
   font-size: 18px;
   transition: all 200ms ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   
 }
 
 .hero .btn-branding:hover {
+   color: var(--branding-color);
   background: white;
-  color: var(--branding-color);
+
 }
 
 
@@ -180,17 +183,6 @@ footer .contact-box {
 footer .contact-box p {
   margin: 0;
 }
-footer .email-link {
-  text-decoration: none;
-  color: black;
-  font-size: 24px;
-  text-align: center;
-  background: none;
-}
-
-footer .email-link:hover {
-  color: var(--branding-color);
-}
 
 footer .social-links a {
   margin: 0 20px;
@@ -213,6 +205,12 @@ footer .btn-branding {
   border-radius: 30px;
   padding: 15px 30px;
   font-size: 18px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+footer .btn-branding:hover {
+  color: var(--branding-color);
+  background: white;
 }
 
 .ml-5 {
