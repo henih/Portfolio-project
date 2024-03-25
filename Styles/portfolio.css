@@ -1,27 +1,25 @@
 :root {
-  --branding-color: #e4b89e;
-  --primary-color: #f2eae6;
-  --other-color: #D6CAC7:
-  --heading-font-family: "Playfair Display", serif;
-  --default-font-family: "Poppins", sans-serif;
-  --branding-font-family: "Corinthia", cursive;
+  --branding-color: #416bd4;
+  --primary-color: #fcffde;
+  --other-color: #f9c21b;
+  font-family: "Poppins", sans-serif;
 }
+
 .navbar-brand {
-  font-family: var(--branding-font-family) ;
-  font-size: 30px;
-  font-weight: bold;
+  font-family: var(--branding-font-family);
+  font-size: 20px;
 }
 
 .hero h1 {
-  font-family: var(--branding-font-family);
-  color: black;
-  font-size: 120px;
-  font-weight: 700;
+  color: var(--other-color);
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: 130px;
 }
 
 .hero {
-  text-align: center;
-  padding: 120px 20px;
+  padding: 60px 20px;
+  margin-left: 30px;
 }
 
 .hero p {
@@ -32,33 +30,30 @@
 }
 
 .hero h2 {
-  font-family: var(--default-font-family);
+  color: var(--other-color);
   font-weight: normal;
   font-size: 24px;
   line-height: 2;
 }
- .hero .btn-branding
-{
-  background: var(--branding-color);
+
+.hero .btn-branding {
+  background: var(--other-color);
   color: white;
   border-radius: 30px;
   padding: 15px 30px;
   font-size: 18px;
   transition: all 200ms ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  
 }
 
 .hero .btn-branding:hover {
-   color: var(--branding-color);
+  color: var(--branding-color);
   background: white;
-
 }
 
 header {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/075/original/header.png?1693308367");
+  background-image: url("../images/header.png");
   background-size: cover;
-  background-position: 25% 75%;
 }
 
 h2,
@@ -67,22 +62,19 @@ h4,
 h5,
 h6 {
   color: black;
-  font-family: var(--heading-font-family);
 }
-
-p {
-  font-family: var(--default-font-family)}
 
 footer h3 {
   font-size: 36px;
   text-align: left;
+  color: var(--primary-color);
 }
 footer p {
   text-align: left;
 }
 
 footer .contact-box {
-  background: var(--primary-color);
+  background: var(--other-color);
   padding: 30px;
   border-radius: 30px;
 }
@@ -93,8 +85,8 @@ footer .contact-box p {
 
 footer .social-links a {
   margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--primary-color);
+  color: white;
+  background: var(--branding-color);
   padding: 10px 14px;
   font-size: 19px;
   border-radius: 50%;
@@ -103,7 +95,7 @@ footer .social-links a {
 
 footer .social-links a:hover {
   color: white;
-  background: var(--branding-color);
+  background: var(--other-color);
 }
 
 footer .btn-branding {
@@ -129,34 +121,34 @@ section p {
   font-size: 25px;
 }
 
-section .btn-branding-outline, .about-me .btn-branding-outline {
+section .btn-branding-outline,
+.about-me .btn-branding-outline {
   border-radius: 30px;
   padding: 15px 25px;
   font-size: 19px;
   transition: all 200ms ease-in-out;
   border: 1px solid var(--branding-color);
-  color: snow ;
+  color: snow;
   background: var(--branding-color);
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-section .btn-branding-outline:hover, .about-me .btn-branding-outline:hover
-{
+section .btn-branding-outline:hover,
+.about-me .btn-branding-outline:hover {
   color: var(--branding-color) !important;
   background: white;
   border: 1px solid var(--branding-color);
 }
 
- .grid {
-        display: grid;
-      }
+.grid {
+  display: grid;
+}
 .grid-2-col {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 45px;
-        align-items: center;
-        justify-content: center;
-      }
-
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 45px;
+  align-items: center;
+  justify-content: center;
+}
 
 .content e-mail {
   background: none;
@@ -191,7 +183,6 @@ p.about-me-summary {
 }
 
 @media (max-width: 960px) {
-
   .hero {
     padding: 70px 20px;
   }
@@ -218,22 +209,21 @@ p.about-me-summary {
     padding: 0;
     margin: 0;
   }
- 
-  
+
   .tech-used {
     font-size: 20px;
   }
- 
+
   .headshot {
     display: none;
   }
 
-   .grid {
-          grid-template-columns: 1fr;
-          grid-gap: 15px;
-        }
-       
-        .grid img {
-          display: none;
-        }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .grid img {
+    display: none;
+  }
 }
